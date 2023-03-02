@@ -1,0 +1,25 @@
+public class BirthdayTest{
+
+    //public BirthdayTest(){
+
+
+    //}
+
+    public int randomNum() {
+        Random rand = new Random();
+        int min = 1;
+        int max = 366;
+        //generating a random number from the bounds i set prev
+        int res = rand.nextInt(max-min) + min;
+        return res;
+    }
+    
+
+}
+class Test{
+    public static void main(String [] args){
+        BirthdayTest test = new BirthdayTest();
+        System.out.print(test.randomNum());
+    }
+
+}
